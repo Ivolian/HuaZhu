@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">HuaZhu</string>
+
+    <string name="home">首页</string>
+    <string name="recommend_hotel">酒店推荐</string>
+    <string name="trip_assist">行程助手</string>
+    <string name="wallet">华住钱包</string>
+    <string name="profile">我</string>
+
+    <string name="htrip_no_order">暂无进行中的订单哦~</string>
+    <string name="htrip_book">现在就预订酒店</string>
+    <string name="htrip_trip_remind">行程提醒</string>
+    <string name="htrip_trip_remind_detail">您的最近入住日程将在这里呈现</string>
+    <string name="htrip_check_in">入住服务</string>
+    <string name="htrip_check_in_detail">您可以在行程助手里方便的完成续住、付房费和自助退房等操作</string>
+
+</resources>

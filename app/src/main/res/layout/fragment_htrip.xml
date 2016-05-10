@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.zhy.android.percent.support.PercentLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/tvTitle"
+        style="@style/Title"
+        android:text="@string/trip_assist"
+        app:layout_heightPercent="11%sh" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.2dp"
+        android:background="@color/md_grey_300" />
+
+    <com.zhy.android.percent.support.PercentFrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/htrip_no_order_bg">
+
+        <ImageView
+            android:id="@+id/ivStarOne"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/htrip_star_one"
+            app:layout_heightPercent="40%sh" />
+
+        <ImageView
+            android:id="@+id/ivStarTwo"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/htrip_star_two"
+            app:layout_heightPercent="40%sh" />
+
+        <ImageView
+            android:id="@+id/ivStarThree"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:src="@drawable/htrip_star_three"
+            app:layout_heightPercent="40%sh" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/htrip_sky"
+            app:layout_heightPercent="33%h" />
+
+        <femade.huazhu.main.htrip.CustomScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <com.zhy.android.percent.support.PercentLinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:background="@android:color/transparent"
+                    app:layout_heightPercent="40%sh">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="3dp"
+                        android:layout_gravity="bottom"
+                        android:background="@color/md_white" />
+
+                    <ImageView
+                        android:id="@+id/ivCar"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="bottom|end"
+                        android:src="@drawable/icon_htrip_car" />
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/md_white"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/htrip_no_order"
+                        android:textColor="@color/md_grey_400"
+                        android:textSize="16dp" />
+
+                    <femade.huazhu.custom.BorderButton
+                        android:layout_width="160dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/htrip_book"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="16dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="60dp"
+                        android:drawableLeft="@drawable/icon_htrip_grey_uncheck_in"
+                        android:drawablePadding="12dp"
+                        android:text="@string/htrip_trip_remind"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/htrip_uncheck_in_info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:text="@string/htrip_trip_remind_detail"
+                        android:textColor="@color/md_grey_600"
+                        android:textSize="14dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="48dp"
+                        android:drawableLeft="@drawable/icon_htrip_grey_check_in"
+                        android:drawablePadding="12dp"
+                        android:text="@string/htrip_check_in"
+                        android:textColor="@color/md_grey_800"
+                        android:textSize="16dp" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="24dp"
+                        android:src="@drawable/htrip_check_in_info" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="48dp"
+                        android:layout_marginLeft="16dp"
+                        android:layout_marginRight="16dp"
+                        android:layout_marginTop="24dp"
+                        android:gravity="center"
+                        android:lineSpacingExtra="3dp"
+                        android:text="@string/htrip_check_in_detail"
+                        android:textColor="@color/md_grey_600"
+                        android:textSize="14dp" />
+
+                </LinearLayout>
+
+            </com.zhy.android.percent.support.PercentLinearLayout>
+
+        </femade.huazhu.main.htrip.CustomScrollView>
+
+    </com.zhy.android.percent.support.PercentFrameLayout>
+
+</com.zhy.android.percent.support.PercentLinearLayout>
